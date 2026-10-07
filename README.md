@@ -10,7 +10,7 @@ The five classes are **Cải lương**, **Ca trù**, **Chầu văn**, **Chèo**,
 | --- | --- |
 | [CheckDTS.ipynb](CheckDTS.ipynb) | Audit audio metadata, duration, silence, decoding errors, and exact duplicates. |
 | [Split.ipynb](Split.ipynb) | Remove exact duplicate copies, create the fixed split, and extract Log-STFT arrays. |
-| [VNTM3_04_CNN2D_STFT30_LocalGPU.ipynb](VNTM3_04_CNN2D_STFT30_LocalGPU.ipynb) | Initial single-seed STFT experiment. |
+| [CNN2D_STFT30.ipynb](CNN2D_STFT30.ipynb) | Initial single-seed STFT experiment. |
 | [STFT_CNN2D_MultiSeed.ipynb](STFT_CNN2D_MultiSeed.ipynb) | Optimized STFT training with seeds 42, 123, and 2026. |
 | [LogMel_CNN2D_MultiSeed.ipynb](LogMel_CNN2D_MultiSeed.ipynb) | Log-Mel extraction and training with the same three seeds. |
 | [Demo.ipynb](Demo.ipynb) | Google Colab inference using the supplied Log-Mel checkpoint. |
@@ -57,7 +57,7 @@ Run in this order:
 
 1. **CheckDTS.ipynb** writes the audit CSV files to `_audit/`.
 2. **Split.ipynb** writes the fixed split manifests and spectrograms to `_stft30_v1/`.
-3. Optionally run **VNTM3_04_CNN2D_STFT30_LocalGPU.ipynb** for the initial single-seed baseline.
+3. Optionally run **CNN2D_STFT30.ipynb** for the initial single-seed baseline.
 4. **STFT_CNN2D_MultiSeed.ipynb** writes results to `_cnn2d_stft_multiseed_v1/`.
 5. **LogMel_CNN2D_MultiSeed.ipynb** reuses the STFT manifest and writes results to `_cnn2d_mel30_multiseed_v1/`.
 
